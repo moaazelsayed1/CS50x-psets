@@ -1,0 +1,51 @@
+/*if (candidates[preferences[i][j]].eliminated == true)
+        {
+            if (candidates[preferences[i][j + 1]].eliminated == true)
+            {
+                if (candidates[preferences[i][j + 2]].eliminated == true)
+                {
+                    break;
+                }
+                else
+                {
+                    candidates[preferences[i][j + 2]].votes++;
+                }
+            }
+            else
+            {
+                candidates[preferences[i][j + 1]].votes++;
+            }
+        }
+        else 
+        {
+            candidates[preferences[i][j]].votes++;
+        }*/
+        
+ for (int i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].votes > new_voter_count / 2)
+        {
+             return false;
+        }
+    }
+    
+int highest = -1;
+    int count = 0;
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].votes != min && candidates[i].votes > highest)
+        {
+            highest = candidates[i].votes;
+        }
+    }
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].votes == highest)
+        {
+            count++;
+        }
+    }
+    if (count == voter_count - min)
+    {
+        return true;
+    }

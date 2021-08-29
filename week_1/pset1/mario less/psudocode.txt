@@ -1,0 +1,13 @@
+we want do-while loop to make sure that getting the integer hsppens at least one time,
+and to ignore any invalid value (n must be >=1 and <=8)
+
+the pyramid contains of two kinds of stone
+(spaces and hashes)
+so we gonna nest two for-loops inside another one
+the main for loop is for row
+the second is for space, the third is for hashes
+we can not nest the space for loop inside the hashes one becouse it does not depend on columns but rows
+** we have to get the relation between (i) and (j) and between (i) and (k)
+which is
+    ***** j<i+1 **** and
+    ***** k<(n-1)-i *****

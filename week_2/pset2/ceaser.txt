@@ -1,0 +1,15 @@
+
+    1- recieve the key from the user
+    2- recieve the plaintext.
+    3- create for loop to encrypts each of the alphabets of the text.
+    4- then substitute in the following relationship
+        ci = (pi + k) % 26
+    5- print out the ciphertext.
+
+
+      about shifting the ascii code:            (     s[i] = (((s[i] - 65) + key) % 26) + 65;    )
+
+                 we have to shift all uppercases to start from one and end at
+                 26 then we could add the key and take the remainder of ddviding
+                 it by 26 r(0-25), by adding r to 65 we can access all uppercases
+                 depending on the letter s[i].

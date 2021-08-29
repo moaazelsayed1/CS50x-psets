@@ -1,0 +1,16 @@
+// a programme to indicate the readability of a text:
+
+- we need to know the totl number of the following 
+     1-words in the text.
+     2-letters in the text.
+     3-sentences in the text.
+    
+- we have to calculate the average per (100 words) of the following
+     1- letters (L).
+     2- sentences (S).
+     
+- then we can substitute in the following relationship:  
+    
+     index = 0.0588 * L - 0.296 * S - 15.8 
+     then Approximate (index) to the nearest integer using (0.0f) as a placeholder for it.
+      
